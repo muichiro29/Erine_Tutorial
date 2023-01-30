@@ -5,6 +5,8 @@ Este es el repositorio oficial que estare haciendo en los videos de [mi canal de
 
 [Documentacion](https://erine.cyberghxst.ga)
 
+[Servidor de soporte](https://discord.gg/WKv2zYFhtH)
+
 
 # Instalador
 
