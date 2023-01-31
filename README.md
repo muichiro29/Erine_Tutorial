@@ -29,6 +29,12 @@ const client = new ErineClient({
   prefix: "!", //Prefix
 });
 
+//Handler
+
+client.load_commands('./comandos')
+client.load_events('./events')
+
+////
 
 client.login(""); ///Token de tu bot
 ```
