@@ -1,7 +1,5 @@
 const { ErineClient } = require("erine");
 
-// importamos nuestra clase
-
 const client = new ErineClient({
     intents: ['Guilds', 'GuildMessages', 'MessageContent'],
     prefix: "?"
