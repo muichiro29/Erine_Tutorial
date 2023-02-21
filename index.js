@@ -14,4 +14,4 @@ client.load_events('./events')
 
 ////
 
-client.login("MTA2OTQyMDMzODM4NTAwMjYyNw.GdLKdO.MK5IDSHDnw5uVprpHzUXSnT7VGNKbPW7szG3n4")
+client.login("TOKEN")
