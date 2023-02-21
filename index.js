@@ -1,13 +1,10 @@
-const { ErineClient } = require("erine"); ///Definimos el cleint
+const { ErineClient } = require("erine");
 
-const { GatewayIntentBits } = require("discord.js"); //Definimos los intents
+// importamos nuestra clase
 
 const client = new ErineClient({
-  intents: [
-    GatewayIntentBits.Guilds, 
-     GatewayIntentBits.MessageContent, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMembers
-  ], ///Definimos los intents que usa nuestro bot
-  prefix: "!", //Prefix
+    intents: ['Guilds', 'GuildMessages', 'MessageContent'],
+    prefix: "?"
 });
 
 //Handler
@@ -17,4 +14,4 @@ client.load_events('./events')
 
 ////
 
-client.login(""); ///Token de tu bot
+client.login("MTA2OTQyMDMzODM4NTAwMjYyNw.GdLKdO.MK5IDSHDnw5uVprpHzUXSnT7VGNKbPW7szG3n4")
