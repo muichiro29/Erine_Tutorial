@@ -32,12 +32,4 @@ client.load_events('./events')
 ////
 
 
-
-
-
-
-
-
-
-
-client.login("MTA2OTQyMDMzODM4NTAwMjYyNw.GCSnjH.bsBQppWLnP1KDIKGfxi61YnH7Jyc8367KiCzQs")
+client.login(" Token")
