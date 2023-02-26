@@ -19,12 +19,25 @@ Ejemplo del index.js
 ```js
 const { ErineClient } = require("erine"); ///Definimos el cleint
 
-const { GatewayIntentBits } = require("discord.js"); //Definimos los intents
-
 const client = new ErineClient({
-  intents: ['Guilds', 'GuildMessages', 'MessageContent'], ///Definimos los intents que usa nuestro bot
-  prefix: "!", //Prefix
+    intents: ['Guilds', 'GuildMessages', 'MessageContent'],
+    prefix: async function(d) {
+        let prefix = await db.get(`prefix_${d.guild.id}`);
+        return prefix || '?' // Prefix con DB
+    }
 });
+
+/////////////DB
+
+const db = new Database({
+    path: "database",
+    tables: ["main", "usuarios"]
+})
+db.on('ready', () => {
+    console.log('Base de datos conectado correctamente')
+})
+db.start()
+exports.db = db
 
 //Handler
 
